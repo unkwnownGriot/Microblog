@@ -1,0 +1,8 @@
+.venv
+.vagrant
+logs
+app.db
+.env
+*.mo
+*.pot
+__pycache__

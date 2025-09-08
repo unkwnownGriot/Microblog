@@ -148,6 +148,10 @@ def unfollow(username):
         return redirect(url_for('main.user',username=username))
     else:
         return redirect(url_for('main.index'))
+    
+
+
+
 
 
 

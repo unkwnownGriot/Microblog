@@ -11,6 +11,7 @@ import os
 from elasticsearch import Elasticsearch
 from flask_login import LoginManager
 from flask_mail import Mail
+import pymysql
 
 # Getting the user locale_selector settings
 
@@ -19,7 +20,7 @@ def get_locale():
 
 
 ## Creating instances of flask extension withiut initializing them
-
+pymysql.install_as_MySQLdb()
 login = LoginManager()
 login.login_view = 'auth.login'
 login.login_message =_l('Please log in to access this page')

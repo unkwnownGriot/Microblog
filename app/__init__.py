@@ -65,7 +65,7 @@ def create_app(config_class=Config):
 
     # email server intialisation
 
-    if not flask_app.debug and not flask_app.testing:
+    if not flask_app.debug:
         if flask_app.config['MAIL_SERVER']:
             auth = None
             if flask_app.config['MAIL_USERNAME'] or flask_app.config['MAIL_PASSWORD']:

@@ -14,6 +14,6 @@ class Config:
     MAIL_USE_SSL = False
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    ADMINS = ['theo228boss@gmail.com']
+    ADMINS = [os.environ.get('ADMINS')]
     POSTS_PER_PAGE = 15
     LANGUAGES = ['en','fr']
